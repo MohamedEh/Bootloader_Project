@@ -1,0 +1,461 @@
+Archive member included because of file (symbol)
+
+d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./BLD_UART.o (__do_clear_bss)
+d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega32.o)
+                              ./main.o (__eerd_byte_m32)
+d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32.o)
+                              ./Manger.o (__eeupd_byte_m32)
+
+Allocating common symbols
+Common symbol       size              file
+
+u8SID               0x1               ./Manger.o
+u8DownloadState     0x1               ./Manger.o
+u8Data_Length       0x1               ./BLD_UART.o
+u8Data_Buffer       0xff              ./BLD_UART.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00006ffe         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./BLD_UART.o
+LOAD ./GIE_prog.o
+LOAD ./Manger.o
+LOAD ./main.o
+LOAD d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0x4ba
+ *(.vectors)
+ .vectors       0x00000000       0x54 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x10 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000060                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000070        0x8 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x00000078        0x4 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000078                __vector_1
+                0x00000078                __vector_12
+                0x00000078                __bad_interrupt
+                0x00000078                __vector_6
+                0x00000078                __vector_3
+                0x00000078                __vector_11
+                0x00000078                __vector_13
+                0x00000078                __vector_17
+                0x00000078                __vector_19
+                0x00000078                __vector_7
+                0x00000078                __vector_5
+                0x00000078                __vector_4
+                0x00000078                __vector_9
+                0x00000078                __vector_2
+                0x00000078                __vector_15
+                0x00000078                __vector_8
+                0x00000078                __vector_14
+                0x00000078                __vector_10
+                0x00000078                __vector_16
+                0x00000078                __vector_18
+                0x00000078                __vector_20
+ .text          0x0000007c        0x0 ./BLD_UART.o
+ .text          0x0000007c        0x0 ./GIE_prog.o
+ .text          0x0000007c        0x0 ./Manger.o
+ .text          0x0000007c        0x0 ./main.o
+ .text          0x0000007c        0x0 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x0000007c        0x0 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text          0x0000007c        0x0 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega32.o)
+ .text          0x0000007c        0x0 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32.o)
+                0x0000007c                . = ALIGN (0x2)
+ *(.text.*)
+ .text.UART_vInit
+                0x0000007c       0x10 ./BLD_UART.o
+                0x0000007c                UART_vInit
+ .text.UART_vSendChar
+                0x0000008c        0x8 ./BLD_UART.o
+                0x0000008c                UART_vSendChar
+ .text.UART_u8ReceiveChar
+                0x00000094        0x8 ./BLD_UART.o
+                0x00000094                UART_u8ReceiveChar
+ .text.UART_vRxHandler
+                0x0000009c       0x5c ./BLD_UART.o
+                0x0000009c                UART_vRxHandler
+ .text.GIE_voidEnable
+                0x000000f8        0x4 ./GIE_prog.o
+                0x000000f8                GIE_voidEnable
+ .text.GIE_voidDisable
+                0x000000fc        0x4 ./GIE_prog.o
+                0x000000fc                GIE_voidDisable
+ .text.Manager_vRxNotification
+                0x00000100       0x1c ./Manger.o
+                0x00000100                Manager_vRxNotification
+ .text.Manager_vCheckCRC
+                0x0000011c       0x4c ./Manger.o
+                0x0000011c                Manager_vCheckCRC
+ .text.Manager_vNegReq
+                0x00000168        0x8 ./Manger.o
+                0x00000168                Manager_vNegReq
+ .text.Manager_vPosReq
+                0x00000170        0xc ./Manger.o
+                0x00000170                Manager_vPosReq
+ .text.Manager_vHandleAppReq
+                0x0000017c       0x12 ./Manger.o
+                0x0000017c                Manager_vHandleAppReq
+ .text.Boot_Func
+                0x0000018e       0x92 ./Manger.o
+                0x0000018e                Boot_Func
+ .text.Manager_vMain
+                0x00000220      0x1f4 ./Manger.o
+                0x00000220                Manager_vMain
+ .text.APP_vMoveIvt
+                0x00000414       0x1a ./main.o
+                0x00000414                APP_vMoveIvt
+ .text.main     0x0000042e       0x56 ./main.o
+                0x0000042e                main
+ .text.libgcc   0x00000484        0x0 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000484        0x0 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.avr-libc
+                0x00000484       0x10 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega32.o)
+                0x00000484                __eerd_byte_m32
+ .text.avr-libc
+                0x00000494       0x22 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32.o)
+                0x00000494                __eeupd_byte_m32
+                0x00000496                __eeupd_r18_m32
+                0x000004b6                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000004b6        0x0 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x000004b6                exit
+                0x000004b6                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000004b6        0x4 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000004ba                _etext = .
+
+.data           0x00800060        0x0 load address 0x000004ba
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./BLD_UART.o
+ .data          0x00800060        0x0 ./GIE_prog.o
+ .data          0x00800060        0x0 ./Manger.o
+ .data          0x00800060        0x0 ./main.o
+ .data          0x00800060        0x0 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00800060        0x0 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega32.o)
+ .data          0x00800060        0x0 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060      0x114
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800060        0x0 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800060        0x0 ./BLD_UART.o
+ .bss           0x00800060        0x0 ./GIE_prog.o
+ .bss           0x00800060        0x0 ./Manger.o
+ .bss           0x00800060        0x0 ./main.o
+ .bss           0x00800060        0x0 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800060        0x0 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00800060        0x0 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega32.o)
+ .bss           0x00800060        0x0 d:/embedded/programs/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32.o)
+ *(.bss*)
+ .bss.Local_u8Index.1294
+                0x00800060        0x1 ./BLD_UART.o
+ .bss.Local_u8State.1293
+                0x00800061        0x1 ./BLD_UART.o
+ .bss.ptr_func  0x00800062        0x2 ./Manger.o
+                0x00800062                ptr_func
+ .bss.IsReqReceived
+                0x00800064        0x1 ./Manger.o
+                0x00800064                IsReqReceived
+ .bss.pu8Data_Buffer
+                0x00800065        0x2 ./Manger.o
+                0x00800065                pu8Data_Buffer
+ .bss.Local_u8IsCRCValid.1563
+                0x00800067        0x1 ./Manger.o
+ .bss.Local_u8PageNo.1562
+                0x00800068        0x1 ./Manger.o
+ .bss.Local_u8ValidReq.1561
+                0x00800069        0x1 ./Manger.o
+ .bss.Local_u16ReceivedCRC.1560
+                0x0080006a        0x2 ./Manger.o
+ .bss.Local_u16ReceivedLen.1559
+                0x0080006c        0x2 ./Manger.o
+ .bss.Local_u16CodeSize.1558
+                0x0080006e        0x2 ./Manger.o
+ .bss.JmpApp    0x00800070        0x2 ./main.o
+                0x00800070                JmpApp
+ *(COMMON)
+ COMMON         0x00800072      0x100 ./BLD_UART.o
+                0x00800072                u8Data_Length
+                0x00800073                u8Data_Buffer
+ COMMON         0x00800172        0x2 ./Manger.o
+                0x00800172                u8SID
+                0x00800173                u8DownloadState
+                0x00800174                PROVIDE (__bss_end, .)
+                0x000004ba                __data_load_start = LOADADDR (.data)
+                0x000004ba                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800174        0x0
+                0x00800174                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800174                PROVIDE (__noinit_end, .)
+                0x00800174                _end = .
+                0x00800174                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x2
+ *(.eeprom*)
+ .eeprom        0x00810000        0x2 ./main.o
+                0x00810000                eeData
+                0x00810002                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x1254
+ *(.stab)
+ .stab          0x00000000      0x51c ./BLD_UART.o
+ .stab          0x0000051c      0x144 ./GIE_prog.o
+                                0x1c8 (size before relaxing)
+ .stab          0x00000660      0x96c ./Manger.o
+                                0xb70 (size before relaxing)
+ .stab          0x00000fcc      0x288 ./main.o
+                                0x528 (size before relaxing)
+
+.stabstr        0x00000000     0x111d
+ *(.stabstr)
+ .stabstr       0x00000000     0x111d ./BLD_UART.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(Bootloader_Dynamic.elf elf32-avr)
+LOAD linker stubs
